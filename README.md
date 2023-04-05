@@ -55,6 +55,8 @@ Y navegar a
 http://127.0.0.1:8000/
 ```
 
+## Tecnologías y lenguajes utilizados
+
 * **Python** (v. 3.10.7) [Source](https://www.python.org/)
 * **Django** (v. 4.1.7)  [Source](https://www.djangoproject.com/)
 * **Django Rest Framework** (v. 3.14.0) [Source](https://www.django-rest-framework.org/)
