@@ -61,6 +61,7 @@ http://127.0.0.1:8000/
 * **Django** (v. 4.1.7)  [Source](https://www.djangoproject.com/)
 * **Django Rest Framework** (v. 3.14.0) [Source](https://www.django-rest-framework.org/)
 * **django-cors-headers** (v. 3.14.0) [Source](https://pypi.org/project/django-cors-headers/)
+* **djangorestframework-simplejwt** (v. 5.2.2) [Source](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
 * **drf-yasg** (v. 1.21.5) [Source](https://drf-yasg.readthedocs.io/en/stable/)
 * **gunicorn** (v. 20.1.0) [Source](https://gunicorn.org/)
 * **whitenoise** (v. 6.4.0) [Source](https://whitenoise.readthedocs.io/en/latest/)
