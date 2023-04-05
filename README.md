@@ -3,6 +3,9 @@
 ## Description
 API de pagos de servicios de streaming. Tiene las funcionalidades de crear pagos y registrar automáticamente si es que está vencido, crear y actualizar servicios de streaming y crear un usuario con foto de perfil.
 
+## ERD
+![ERD-PAYMENTS](https://user-images.githubusercontent.com/61089189/230165506-7258dc3b-a049-428c-9916-cafe94f197b6.png)
+
 ## Run Locally
 
 Clonar el repositorio
