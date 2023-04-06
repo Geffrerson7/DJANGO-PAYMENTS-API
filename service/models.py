@@ -12,4 +12,4 @@ class Service(models.Model):
         return self.name
 
     class Meta:
-        db_table = "Service"
+        db_table = "Services"

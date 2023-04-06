@@ -21,4 +21,4 @@ class ExpiredPayment(models.Model):
     penalty_fee_amount=models.FloatField(default=0.0)
 
     class Meta:
-        db_table = "ExpiredPayments"
+        db_table = "Expired_payments"

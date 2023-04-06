@@ -8,7 +8,7 @@ class UserProfile(models.Model):
         return self.user.username
 
     photo = models.URLField()
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="userId")
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="user_id")
 
     class Meta:
-        db_table = "UserProfile"
+        db_table = "User_profile"
