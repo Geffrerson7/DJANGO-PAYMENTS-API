@@ -4,8 +4,6 @@ from service.models import Service
 
 
 class UserPayment(models.Model):
-    """Modelo de los pagos de los usuarios"""
-
     @property
     def email(self):
         return self.user.email
@@ -24,7 +22,6 @@ class UserPayment(models.Model):
 
     def __str__(self):
         return f"{self.user}"
-    
-    class Meta:
-        db_table = "UserPayment"
 
+    class Meta:
+        db_table = "User_payment"

@@ -3,8 +3,11 @@ from payment.models import UserPayment
 
 class ExpiredPayment(models.Model):
     @property
-    def user(self):
+    def user_email(self):
         return self.payment_user.user.email
+    @property
+    def user_id(self):
+        return self.payment_user.user.id
     @property
     def service_logo(self):
         return self.payment_user.service.logo
@@ -21,4 +24,4 @@ class ExpiredPayment(models.Model):
     penalty_fee_amount=models.FloatField(default=0.0)
 
     class Meta:
-        db_table = "ExpiredPayments"
+        db_table = "Expired_payments"
