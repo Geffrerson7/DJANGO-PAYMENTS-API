@@ -5,6 +5,7 @@ from django.contrib.auth.hashers import make_password
 from rest_framework_simplejwt.views import TokenObtainPairView
 import jwt
 from django.conf import settings
+import datetime
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
@@ -26,11 +27,12 @@ class MyTokenObtainPairView(TokenObtainPairView):
 
         # Decodificar el payload del token de acceso
         decoded_token = jwt.decode(access_token_payload, algorithms=['HS256'], verify=False, key=settings.JWT_KEY)
-        
-        # Obtener el del usuario del token decodificado
+                
         user_id = decoded_token.get('user_id')
+        expirated_date = decoded_token.get('exp')
+        fecha = datetime.datetime.fromtimestamp(expirated_date)
         
-        # Agregar el id del usuario a la respuesta
         response.data['user_id'] = user_id
+        response.data['expirated_date'] = fecha
         
         return response
