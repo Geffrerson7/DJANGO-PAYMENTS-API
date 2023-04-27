@@ -13,6 +13,9 @@ import os
 from pathlib import Path
 import dj_database_url
 from datetime import timedelta
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,6 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY", default="your secret key")
+JWT_KEY = os.environ.get("JWT_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = "RENDER" not in os.environ
@@ -130,7 +134,6 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 if not DEBUG:
-
     STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
     STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
@@ -159,4 +162,6 @@ REST_FRAMEWORK = {
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(days=60),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=90),
+    "ALGORITHM": "HS256",
+    "SIGNING_KEY": JWT_KEY,
 }
