@@ -1,12 +1,12 @@
 # DJANGO-PAYMENTS-API
 
-## Description
+## Descripción
 API de pagos de servicios de streaming. Tiene las funcionalidades de crear pagos y registrar automáticamente si es que está vencido, crear y actualizar servicios de streaming y crear un usuario con foto de perfil.
 
 ## ERD
 ![ERD-PAYMENTS](https://user-images.githubusercontent.com/61089189/230165506-7258dc3b-a049-428c-9916-cafe94f197b6.png)
 
-## Run Locally
+## Instalación local
 
 Clonar el repositorio
 
@@ -66,6 +66,7 @@ http://127.0.0.1:8000/
 * **gunicorn** (v. 20.1.0) [Source](https://gunicorn.org/)
 * **whitenoise** (v. 6.4.0) [Source](https://whitenoise.readthedocs.io/en/latest/)
 * **Render**  [Source](https://render.com/docs/deploy-django)
+
 ## Documentación
 Para la documentación del proyecto se utilizó Swagger por su capacidad para generar documentación dinámica y en tiempo real de los servicios web que se están construyendo.
 La documentación del projecto en swagger está en este [Link](https://payments-api-yf4q.onrender.com/swagger/)
