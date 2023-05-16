@@ -8,7 +8,7 @@ from .filters import ExpiredPaymentFilter
 
 class PaymentExpiredUserViewSet(viewsets.ModelViewSet):
 
-    queryset = ExpiredPayment.objects.all()
+    queryset = ExpiredPayment.objects.all().order_by("id")
     serializer_class = ExpiredPaymentSerializer
     pagination_class = StandardResultsSetPagination
     permission_classes = [IsAuthenticated]

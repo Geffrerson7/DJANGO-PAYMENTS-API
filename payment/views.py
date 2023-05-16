@@ -9,7 +9,7 @@ from expiredPayment.models import ExpiredPayment
 
 class PaymentAdminViewSet(viewsets.ModelViewSet):
 
-    queryset = UserPayment.objects.all()
+    queryset = UserPayment.objects.all().order_by("id")
     serializer_class = PaymentSerializer
     pagination_class = StandardResultsSetPagination
     filter_backends = [filters.SearchFilter]
