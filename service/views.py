@@ -8,7 +8,7 @@ from .models import Service
 
 class ServiceUserViewSet(viewsets.ModelViewSet):
 
-    queryset = Service.objects.all()
+    queryset = Service.objects.all().order_by("id")
     serializer_class = ServiceSerializer
     pagination_class = StandardResultsSetPagination
     permission_classes = [IsAuthenticated]
