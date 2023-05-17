@@ -60,7 +60,7 @@ http://127.0.0.1:8000/
 * **Python** (v. 3.10.7) [Source](https://www.python.org/)
 * **Django** (v. 4.1.7)  [Source](https://www.djangoproject.com/)
 * **Django Rest Framework** (v. 3.14.0) [Source](https://www.django-rest-framework.org/)
-* **django-cors-headers** (v. 3.14.0) [Source](https://pypi.org/project/django-cors-headers/)
+* **django-cors-headers** (v. 4.0.0) [Source](https://pypi.org/project/django-cors-headers/)
 * **Simple JWT** (v. 5.2.2) [Source](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
 * **drf-yasg** (v. 1.21.5) [Source](https://drf-yasg.readthedocs.io/en/stable/)
 * **gunicorn** (v. 20.1.0) [Source](https://gunicorn.org/)
